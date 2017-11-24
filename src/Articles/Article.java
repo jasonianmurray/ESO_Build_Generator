@@ -1,3 +1,12 @@
+/*
+ * Author(s): Jason Ian Murray
+ * Creation Date: 24/11/2017
+ * Date Modified: --/--/----
+ * Description:
+ * Articles are the superclass of most wearable items. This class is here to
+ * offer shared structure and lend guidance to the subclasses.
+ */
+
 package Articles;
 
 public abstract class Article {

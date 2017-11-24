@@ -1,3 +1,17 @@
+/*
+ * Author(s): Jason Ian Murray
+ * Creation Date: 24/11/2017
+ * Date Modified: --/--/----
+ * Description:
+ * This class should contain the set of constants that
+ * the calculator (and potentially other classes) rely
+ * on. Containing them all here reduces the potential
+ * for errors across the system and makes them easy to
+ * find.
+ * These constants may be pushed to a database in the
+ * future.
+ */
+
 package Engine;
 
 public class Constants {

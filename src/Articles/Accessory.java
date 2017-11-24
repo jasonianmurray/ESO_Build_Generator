@@ -1,3 +1,11 @@
+/*
+ * Author(s): Jason Ian Murray
+ * Creation Date: 24/11/2017
+ * Date Modified: --/--/----
+ * Description:
+ * Accessories are subclasses of Article that specifically describe
+ * jewellery. Jewells hold specialised enchantments and traits.
+ */
 package Articles;
 public class Accessory extends Article {
 
