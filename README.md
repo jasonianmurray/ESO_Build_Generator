@@ -1,9 +1,13 @@
  ----- Elder Scrolls Online Build Generator -----
 
  ----- Introduction -----
+
 Having recently returned from a working break in Spain, I found myself needing a project to develop existing skills and expand my current working knowledge. A friend of mine, a Neuroscientist with a working understanding of Bio-computing, recommended a project associated with a game he plays.
+
 The game in question, Elder Scrolls Online, was this year featured in a Forbes article that tried to explain why the MMO had seen a growth in its player base to an estimated 8.5 million players. He proposed writing software that could act as an asset to players wishing to build characters with specific desired traits.
+
 Player’s within the ESO universe have the possibility to embellish their characters with a wide set of skills, equipment and potions that impact their potential performance. Baseline performance characteristics can seriously impact a player’s ability to efficiently complete objectives within the game. Players will try to ensure that their build meets characteristic requirements by tweaking gear, food, potions, skills, etc. 
+
 The sheer quantity of equipment, skills and consumables available made ‘brute force’ algorithmic approaches to producing characters with desired traits untenable. I have an interest in Bio-computing and the power of Bio-algorithms to find innovative solutions to complex problems through evolutionary procedures. I decided to leverage genetic algorithms to the task and begin working on the project.
 
  ----- Why I decided to take the project on -----
