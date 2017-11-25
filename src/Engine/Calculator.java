@@ -1,3 +1,15 @@
+/*
+ * Author(s): Jason Ian Murray
+ * Creation Date: 24/11/2017
+ * Date Modified: --/--/----
+ * Description:
+ * The calculator class will contain most of the equations
+ * used to evaluate the effectiveness of a particular build.
+ * It will likely contain the fitness function, amongst other things.
+ * It should represent the mathematics that make character builds
+ * tick.
+ * 
+ */
 package Engine;
 import Articles.Article;
 import Consumables.Food;

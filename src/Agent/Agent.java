@@ -1,3 +1,12 @@
+/*
+ * Author(s): Jason Ian Murray
+ * Creation Date: 24/11/2017
+ * Date Modified: --/--/----
+ * Description:
+ * This class should represent the individual agent that will act as a 'build'.
+ * The agent should have it's own statistics that can be evaluated by a fitness
+ * criteria. It should have articles that effect these statistics.
+ */
 package Agent;
 import Articles.Article;
 import Consumables.Food;
@@ -44,6 +53,8 @@ public class Agent {
 	Food food;
 	Mundus mundus;
 	
+	private double fitness;
+	
 	
 	// http://tamrielfoundry.com/topic/pts-2-1-2-sorcerer-arithmagic/
 	// increase per level: H156, S20, M20
@@ -51,9 +62,11 @@ public class Agent {
 	
 	public Agent() {
 		generateBase();
-		
+		generateArticles();
+		generateConsumables();
+		generateMundus();
 	}
-	
+
 	private void generateBase() {
 		// Max HMS at C160
 		maxHealth = constant.getC160BaseHealth();
@@ -73,7 +86,23 @@ public class Agent {
 		// Accesory x 3
 		// (Weapon x 2) x 2 : Shield cannot be first slot, 1H can be with any other 1H or Shield,
 		// 2H consumes both slots
-		// 7 Body pieces, 3 Accessories, 2x2 Weapon Slots, Food/Drink slot, Mundus slot
+		// 7 Body pieces, 3 Accessories, 2x2 Weapon Slots
 		
+	}
+	
+	private void generateConsumables() {
+		
+	}
+	
+	private void generateMundus() {
+		
+	}
+	
+	public double getFitness() {
+		return this.fitness;
+	}
+	
+	public void setFitness(double fitness) {
+		this.fitness = fitness;
 	}
 }

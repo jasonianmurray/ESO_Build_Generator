@@ -5,12 +5,13 @@
  * Description:
  * Attire describes Articles that are specific to body slots. Attire
  * represents cloth/armour. Attire has specialised enchantments/traits and
- * comes in either light, medium or heavy.
+ * comes in either light, medium or heavy. Attire should have an armour value.
  */
 
 package Articles;
 public class Attire extends Article {
 	
+	int armourValue;
 	ArmourType type;
 
 	@Override
