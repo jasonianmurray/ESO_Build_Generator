@@ -44,6 +44,7 @@ public class Attire extends Article {
 	}
 	
 	private void generateRandomAttire() {
+		name = "Randomly Generated Attire";
 		armourType = ArmourType.getRandType();
 		enchant = AttEnchantment.getRandEnchant();
 		trait = AttTrait.getRandtTrait();

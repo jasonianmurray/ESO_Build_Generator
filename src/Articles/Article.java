@@ -1,7 +1,7 @@
 /*
  * Author(s): Jason Ian Murray
  * Creation Date: 24/11/2017
- * Date Modified: --/--/----
+ * Date Modified: 27/11/2017
  * Description:
  * Articles are the superclass of most wearable items. This class is here to
  * offer shared structure and lend guidance to the subclasses.
@@ -45,6 +45,14 @@ public abstract class Article {
 	
 	// Number of pieces for full set bonus, typically: 2,3 or 5
 	abstract int getSetSize();
+	
+	// Each class must implement article subclass must implement
+	// behaviours associated with their enchantment
+	abstract void applyEnchant();
+	
+	// Each class must implement article subclass must implement
+	// behaviours associated with their trait
+	abstract void applyTrait();
 	
 	
 }

@@ -17,7 +17,7 @@ public enum WeapEnchantment {
 	GLYPH_OF_ABSORB_HEALTH, GLYPH_OF_ABSORB_MAGICKA, GLYPH_OF_ABSORB_STAM,
 	GLYPH_OF_WEAPON_DAM, GLYPH_OF_WEAKENING, GLYPH_OF_CRUSHING, GLYPH_OF_PRISM_ONS;
 	
-	public WeapEnchantment getRandEnchant() {
+	public static WeapEnchantment getRandEnchant() {
 		return values()[Constants.RAND.nextInt(values().length)];
 	}
 }

@@ -18,7 +18,7 @@ public enum AccEnchantment {
 	GLYPH_OF_FLAME_RES, GLYPH_OF_FROST_RES, GLYPH_OF_SCHOCK_RES, GLYPH_OF_POISON_RES,
 	GLYPH_OF_DISEASE_RES, GLYPH_OF_POTION_SPEED, GLYPH_OF_POTION_BOOST;
 	
-	public AccEnchantment getRandEnchant() {
+	public static AccEnchantment getRandEnchant() {
 		return values()[Constants.RAND.nextInt(values().length)];
 	}
 }

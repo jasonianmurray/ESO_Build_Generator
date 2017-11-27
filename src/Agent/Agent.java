@@ -1,7 +1,7 @@
 /*
  * Author(s): Jason Ian Murray
  * Creation Date: 24/11/2017
- * Date Modified: --/--/----
+ * Date Modified: 27/11/2017
  * Description:
  * This class should represent the individual agent that will act as a 'build'.
  * The agent should have it's own statistics that can be evaluated by a fitness
@@ -65,6 +65,7 @@ public class Agent {
 		generateArticles();
 		generateConsumables();
 		generateMundus();
+		getFitness();
 	}
 
 	private void generateBase() {
@@ -102,7 +103,14 @@ public class Agent {
 		return this.fitness;
 	}
 	
-	public void setFitness(double fitness) {
+	public void calcFitness() {
+		double f = 0.0;
+		// behaviour that evaluate f
+		setFitness(f);
+	}
+	
+	private void setFitness(double fitness) {
 		this.fitness = fitness;
 	}
+	
 }

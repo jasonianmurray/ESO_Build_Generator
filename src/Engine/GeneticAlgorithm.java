@@ -1,7 +1,7 @@
 /*
  * Author(s): Jason Ian Murray
  * Creation Date: 24/11/2017
- * Date Modified: --/--/----
+ * Date Modified: 27/11/2017
  * Description:
  * This is the GA the will be used to generate and evolve
  * populations of subsolitions. Each subsolution would represent
@@ -45,12 +45,16 @@ public class GeneticAlgorithm {
 	}
 	
 	private void fitnessAssignment() {
-		// TODO Auto-generated method stub
+		for(int x = 0; x < pop.length; x++) {
+			pop[x].calcFitness();
+		}
 		
 	}
 	
 	private void selection() {
-		// TODO Auto-generated method stubS
+		new QuickSort(pop, 0, pop.length - 1);
+		// Pop should now be sorted (fittest first)
+		// Decide on selection strategy
 		
 	}
 	

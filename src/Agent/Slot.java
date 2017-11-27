@@ -1,7 +1,7 @@
 /*
  * Author(s): Jason Ian Murray
  * Creation Date: 24/11/2017
- * Date Modified: --/--/----
+ * Date Modified: 27/11/2017
  * Description:
  * A slot acts as a container that holds a particular article. Slots should
  * have a location representing what it can hold. The should only be able to
@@ -11,8 +11,8 @@
 package Agent;
 
 public class Slot {
-	Location location;
+	private Location location;
+	private Object item;
 	
 	
-
 }

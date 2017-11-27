@@ -17,10 +17,8 @@ public enum Location {
 	
 	
 	// The following will likely never get used.
-	private final static Location [] VALUES = {
-			HEAD, SHOUDLERS, CHEST, HANDS, WAIST, LEGS, FEET, ACCESSORY, WEAPON1, WEAPON2};
 	
-	public Location getRandTrait() {
-		return VALUES[Constants.RAND.nextInt(VALUES.length)];
+	public static Location getRandLocation() {
+		return values()[Constants.RAND.nextInt(values().length)];
 	}
 }

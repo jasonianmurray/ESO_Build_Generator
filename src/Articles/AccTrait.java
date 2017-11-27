@@ -5,7 +5,7 @@ import Engine.Constants;
 public enum AccTrait {
 	HEALTHY, ARCANE, ROBUST;
 	
-	public AccTrait getRandTrait() {
+	public static AccTrait getRandTrait() {
 		return values()[Constants.RAND.nextInt(values().length)];
 	}
 }
