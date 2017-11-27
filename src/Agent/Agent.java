@@ -48,8 +48,7 @@ public class Agent {
 	
 	int [] attrIncrementValue = {constant.getHealthAttributeIncrement(), constant.getMagickaAttributeIncrement(), constant.getStaminaAttributeIncrement()};
 	
-	// 7 Body pieces, 3 Accessories, 2x2 Weapon Slots [14 total]
-	Article [] gear = new Article [14];
+	Slot [] gear;
 	Food food;
 	Mundus mundus;
 	
@@ -61,11 +60,25 @@ public class Agent {
 	// increase per attribute point spent: H122, S111, M111
 	
 	public Agent() {
+		setupSlots();
 		generateBase();
 		generateArticles();
 		generateConsumables();
 		generateMundus();
 		getFitness();
+	}
+	
+	// 7 Body pieces, 3 Accessories, 2x2 Weapon Slots [14 total]
+	private void setupSlots() {
+		gear = new Slot[14];
+		// {HEAD, SHOULDERS, CHEST, HANDS, WAIST, LEGS, FEET,
+		for(int x = 0; x < 7; x++) gear[x] = new Slot(Location.values()[x]);
+		
+		// ACCESSORY, ACCESSORY, ACCESSORY,
+		for(int x = 7; x < 10; x++) gear[x] = new Slot(Location.ACCESSORY);
+		
+		// WEAPON1_L, WEAPON1_R, WEAPON2_L, WEAPON2_R}
+		for(int x = 10, y = 8; x < 14; x++, y++) gear[x] = new Slot(Location.values()[y]);
 	}
 
 	private void generateBase() {

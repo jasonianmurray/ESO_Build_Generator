@@ -9,11 +9,10 @@
 
 package Agent;
 
-import Articles.AccTrait;
 import Engine.Constants;
 
 public enum Location {
-	HEAD, SHOUDLERS, CHEST, HANDS, WAIST, LEGS, FEET, ACCESSORY, WEAPON1, WEAPON2;
+	HEAD, SHOULDERS, CHEST, HANDS, WAIST, LEGS, FEET, ACCESSORY, WEAPON1_L, WEAPON1_R, WEAPON2_L, WEAPON2_R;
 	
 	
 	// The following will likely never get used.

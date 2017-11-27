@@ -12,7 +12,25 @@ package Agent;
 
 public class Slot {
 	private Location location;
+
+	// The following will likely undergo further refinement
+	// 'Object' will likely become a specialised type related
+	// to a slottable item's domain
 	private Object item;
 	
+	public Slot(Location location) {
+		this.location = location;
+	}
 	
+	public Location getLocation() {
+		return this.location;
+	}
+
+	public Object getItem() {
+		return this.item;
+	}
+
+	public void setItem(Object item) {
+		this.item = item;
+	}
 }
