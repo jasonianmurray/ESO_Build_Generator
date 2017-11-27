@@ -8,6 +8,12 @@
 
 package Articles;
 
+import Engine.Constants;
+
 public enum ArmourType {
 	LIGHT, MEDIUM, HEAVY;
+	
+	public static ArmourType getRandType() {
+		return values()[Constants.RAND.nextInt(values().length)];
+	}
 }

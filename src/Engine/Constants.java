@@ -1,7 +1,7 @@
 /*
  * Author(s): Jason Ian Murray
  * Creation Date: 24/11/2017
- * Date Modified: --/--/----
+ * Date Modified: 27/11/2017
  * Description:
  * This class should contain the set of constants that
  * the calculator (and potentially other classes) rely
@@ -13,6 +13,11 @@
  */
 
 package Engine;
+
+import java.util.Random;
+
+import Agent.Location;
+import Articles.ArmourType;
 
 public class Constants {
 	// Info from: http://tamrielfoundry.com/topic/pts-2-1-2-sorcerer-arithmagic/
@@ -34,6 +39,9 @@ public class Constants {
 
 	// Base attribute distribution {H, M, S}
 	final static int[] BASE_ATTRIBUTE_DISTRIBUTION = { 0, 0, 0 };
+	
+	// Random generator
+	public final static Random RAND = new Random();
 	
 
 	public int getC160BaseHealth() {
@@ -74,5 +82,39 @@ public class Constants {
 	
 	public int getC160BaseStamRecovery() {
 		return C160_BASE_STAM_RECOVERY;
+	}
+	
+	public int getArmourValueByType(Location location, ArmourType type) {
+		if(type == ArmourType.HEAVY) {
+			if(location == Location.CHEST) {
+				return 2772;
+			} else if(location == location.HANDS) {
+				return 1386;
+			} else if(location == location.WAIST) {
+				return 1039;
+			} else {
+				return 2425;
+			}
+		} else if(type == ArmourType.MEDIUM) {
+			if(location == Location.CHEST) {
+				return 2084;
+			} else if(location == location.HANDS) {
+				return 1042;
+			} else if(location == location.WAIST) {
+				return 781;
+			} else {
+				return 1823;
+			}
+		} else {
+			if(location == Location.CHEST) {
+				return 1396;
+			} else if(location == location.HANDS) {
+				return 698;
+			} else if(location == location.WAIST) {
+				return 523;
+			} else {
+				return 1221;
+			}
+		}
 	}
 }

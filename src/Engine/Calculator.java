@@ -11,6 +11,8 @@
  * 
  */
 package Engine;
+import Agent.Location;
+import Articles.ArmourType;
 import Articles.Article;
 import Consumables.Food;
 import Effects.Skill;
@@ -43,6 +45,40 @@ public class Calculator {
 	public double [] calcSWCritical() {
 		// Sum all sources; 219 = 1%
 		return null;
+	}
+	
+	public int calcArmourRating(Location location, ArmourType type) {
+		if(type == ArmourType.HEAVY) {
+			if(location == Location.CHEST) {
+				return 2772;
+			} else if(location == location.HANDS) {
+				return 1386;
+			} else if(location == location.WAIST) {
+				return 1039;
+			} else {
+				return 2425;
+			}
+		} else if(type == ArmourType.MEDIUM) {
+			if(location == Location.CHEST) {
+				return 2084;
+			} else if(location == location.HANDS) {
+				return 1042;
+			} else if(location == location.WAIST) {
+				return 781;
+			} else {
+				return 1823;
+			}
+		} else {
+			if(location == Location.CHEST) {
+				return 1396;
+			} else if(location == location.HANDS) {
+				return 698;
+			} else if(location == location.WAIST) {
+				return 523;
+			} else {
+				return 1221;
+			}
+		}
 	}
 }	
 

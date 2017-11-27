@@ -9,6 +9,18 @@
 
 package Agent;
 
+import Articles.AccTrait;
+import Engine.Constants;
+
 public enum Location {
 	HEAD, SHOUDLERS, CHEST, HANDS, WAIST, LEGS, FEET, ACCESSORY, WEAPON1, WEAPON2;
+	
+	
+	// The following will likely never get used.
+	private final static Location [] VALUES = {
+			HEAD, SHOUDLERS, CHEST, HANDS, WAIST, LEGS, FEET, ACCESSORY, WEAPON1, WEAPON2};
+	
+	public Location getRandTrait() {
+		return VALUES[Constants.RAND.nextInt(VALUES.length)];
+	}
 }
